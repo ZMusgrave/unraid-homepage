@@ -2,14 +2,6 @@ name: Crowdin Action
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '2 */12 * * *'
-  push:
-    paths: [
-      '/public/locales/en/**',
-    ]
-    branches: [ main ]
-
 jobs:
   synchronize-with-crowdin:
     name: Crowdin Sync
